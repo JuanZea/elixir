@@ -15,4 +15,8 @@ defmodule Program do
   def hello do
     :world
   end
+
+  def print_world do
+    IO.puts Program.hello
+  end
 end
