@@ -12,10 +12,6 @@ defmodule CalculatorTest do
   # async: true = Permitir la ejecucion concurrente de varios casos de prueba, de lo contrario se hace secuencialmente.
   use ExUnit.Case, async: true
 
-  # Creamos un test
-  #
-  # (Hace parte de ExUnit.Case)
-  # test()
   doctest Calculator
 
   test "add should return correct result" do
@@ -28,7 +24,7 @@ defmodule CalculatorTest do
     result = Calculator.add(number_1, number_2)
 
     # Assert
-    assert(result == number_assert)
+    assert result == number_assert
   end
 
   test "substract should return correct result" do
